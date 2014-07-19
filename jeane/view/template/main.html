@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>main</title>
+	<meta name="author" content="Neo" />
+	<link rel="stylesheet"  type="text/css" href="../style/base.css"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/highcharts.js"></script>
+	<style type="text/css" media="screen">
+	.baseinfo
+	{
+		height:150px;
+		width:70%;
+		float:left	
+	}
+	
+	.countinfo {
+		height:150px;
+
+		
+	}
+	
+	.tps {
+		float:none;
+		width:100%;
+		height:300px;
+		border-bottom:2px solid #E3E8ED;
+		padding-top:2px;
+	}
+	
+	.art {
+		float:none;
+		width:100%;
+		height:300px;
+		border-bottom:2px solid #E3E8ED
+	}	
+	</style>
+	
+	<script type="text/javascript">
+		$(function () {
+		    var tps_char_options = {
+	            chart: {
+	                renderTo: 'tps',
+	                animation:false
+	            },		    	
+		        title: {
+		            text: '每秒交易处理数',
+		            x: -20 //center
+		        },
+		        
+		        xAxis: {
+		           title :{
+		           		text:'时间（单位：分钟）'
+		           }
+		        },
+		        
+		        yAxis: {
+		            title: {
+		                text: 'tps (每秒交易笔数)'
+		            },
+		            plotLines: [{
+		                value: 0,
+		                width: 1,
+		                color: '#808080'
+		            }]
+		        },
+		        tooltip: {
+		            valueSuffix: '笔/秒'
+		        },
+		        legend: {
+		            layout: 'vertical',
+		            align: 'right',
+		            verticalAlign: 'middle',
+		            borderWidth: 0
+		        },
+		        series: [
+		        ]
+		    };
+		    
+		    var art_chart_options = {
+	            chart: {
+	                renderTo: 'art',
+	                animation:false
+	            },		    	
+		        title: {
+		            text: '平均响应时间',
+		            x: -20 //center
+		        },
+		        xAxis: {
+		           title :{
+		           		text:'时间（单位：分钟）'
+		           }
+		        },
+		        yAxis: {
+		            title: {
+		                text: 'art (响应时间)'
+		            },
+		            plotLines: [{
+		                value: 0,
+		                width: 1,
+		                color: '#808080'
+		            }]
+		        },
+		        tooltip: {
+		            valueSuffix: '豪秒/笔'
+		        },
+		        legend: {
+		            layout: 'vertical',
+		            align: 'right',
+		            verticalAlign: 'middle',
+		            borderWidth: 0
+		        },
+		        series: [
+		        ]
+		    };		    
+		    var tps_chart = new Highcharts.Chart(tps_char_options);
+		    tps_chart.animation = false;
+		    
+		    var art_chart = new Highcharts.Chart(art_chart_options);
+		    art_chart.animation = false;		    
+		    
+		    window.setInterval( function(){
+				$.getJSON('refresh_data.php', function(data) {
+					for (var i = 0;i < data.series.length; ++i) {
+						var j = 0;
+						for (; j < tps_chart.series.length; ++j) {
+							if (data.series[i].name == tps_chart.series[j].name) {
+								tps_chart.series[i].setData(data.series[i].tps, true);
+								break;
+							}
+						}
+						if (j == tps_chart.series.length) {
+							/*没有找到，需要增加新的series*/
+							var serie = {};
+							serie['name'] = data.series[i].name;
+							serie['data'] = data.series[i].tps;
+							tps_chart.addSeries(serie, true);
+						}
+						
+						j = 0 ;
+						for (; j < art_chart.series.length; ++j) {
+							if (data.series[i].name == art_chart.series[j].name) {
+								art_chart.series[i].setData(data.series[i].art, true);
+								break;
+							}
+						}	
+						if (j == art_chart.series.length) {
+							/*没有找到，需要增加新的series*/
+							var serie = {};
+							serie['name'] = data.series[i].name;
+							serie['data'] = data.series[i].art;
+							art_chart.addSeries(serie, true);
+						}
+					}
+					
+					if (data.total) {
+						$('#total_time').text(data.total);
+					}
+					
+					if (data.total_fail) {
+						$('#total_fail').text(data.total_fail);
+					}
+					
+					if (data.total_succ) {
+						$('#total_cnt').text(data.total_succ);
+					}
+				}) ; 
+		    }, 10*1000);
+		});		
+	</script>
+</head>
+<body>
+	<div style="height:60px; background:#4F5F6F">
+		<table width="100%" height="51px">
+			<tr>
+				<td colspan="3" align="center" style="color:white;font-weight:bold"> Jeane View</td>
+			</tr>
+		</table>
+		<hr>
+	</div>
+	<div style="margin:0 auto; width:960px ;height:700px; background:#FFFFFF;">
+		<div style="border-bottom:2px solid #E3E8ED" width="100%">
+			<div class="baseinfo" >
+				<table width="100%">
+					<tr height="45px">
+						<td>案例名称</td><td>{$tc_name}</td>
+					</tr>
+					<tr>
+						<td>
+						案例启动时间</td><td>{$starttime}</td>
+					</tr>
+					<tr height="45px">
+						<td>执行服务数</td><td>{$service_num}</td>					
+					</tr>
+				</table>
+			</div>
+
+			<div class="countinfo">
+				<table width="280px"cellSpacing="0" cellPadding="0" >
+					<tr height="45px"><td style="padding-left:10px" >总笔数</td><td><i  id="total_time">0</i></td></tr>
+					<tr height="45px" style="background-color:#59C2E6"><td style="padding-left:10px;color:white" >成功笔数</td><td style="color:white"><i id="total_cnt">0</i></td></tr>
+					<tr height="45px" ><td style="padding-left:10px" >错误数</td><td><i id="total_fail">0</i></td></tr>
+				</table>
+			</div>
+		</div>
+		<div id="tps" class="tps">
+
+		</div>
+		<div class="art" id="art">
+
+		</div>
+	</div>
+</body>
+</html>
+
