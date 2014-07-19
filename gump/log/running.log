@@ -1,0 +1,286 @@
+0630.094315.476 tid:4151539936 gp_lua_util.c.189,(E),wrong result type [need int]
+0630.094315.499 tid:4151539936 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.095510.111 tid:4151241168 gp_lua_util.c.190,(E),wrong result type [need int]
+0630.095510.112 tid:4151241168 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.101502.780 tid:4151773648 gp_lua_util.c.191,(E),wrong result type [need int]
+0630.101502.780 tid:4151773648 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.101647.743 tid:4151531984 gp_lua_util.c.191,(E),wrong result type [need int]
+0630.101647.744 tid:4151531984 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.101729.841 tid:4151433680 gp_lua_util.c.191,(E),wrong result type [need int]
+0630.101729.842 tid:4151433680 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.101912.525 tid:4151814608 gp_lua_util.c.191,(E),wrong result type [need int]
+0630.101912.525 tid:4151814608 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.102559.848 tid:4151470544 gp_lua_util.c.191,(E),wrong result type [need int]
+0630.102559.848 tid:4151470544 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.102736.442 tid:4151855568 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.103013.698 tid:4151396816 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.103831.187 tid:4151572944 gp_main.c.166,(E),luaL_loadFile[/home/ap/aps/gump/script/base/action.lua] error [3]
+0630.103903.709 tid:4151843280 gp_lua_util.c.171,(E),error running function `action': /home/ap/aps/gump/script/base/action.lua:2: seqence file [/home/ap/aps/gump/sequence//home/ap/aps/gump/sequence//home/ap/aps/gump/se.seq] are not exists !!!
+ [2]
+0630.104104.393 tid:4152207824 gp_lua_util.c.171,(E),error running function `action': /home/ap/aps/gump/script/base/action.lua:2: seqence file [/home/ap/aps/gump/sequence/seq_1.seq] are not exists !!!
+ [2]
+0630.104830.809 tid:4151400912 gp_loadcfg.c.93,(E),fopen [/home/ap/aps/gump/scenario/base.sce] failed [No such file or directory]
+0630.104831.678 tid:4151429584 gp_loadcfg.c.93,(E),fopen [/home/ap/aps/gump/scenario/base.sce] failed [No such file or directory]
+0630.110743.581 tid:4152027600 gp_lua_util.c.171,(E),error running function `action': /home/ap/aps/gump/script/base/action.lua:4: attempt to concatenate global '__VUID' (a nil value) [2]
+0630.110811.452 tid:4152027600 gp_lua_util.c.171,(E),error running function `action': /home/ap/aps/gump/script/base/action.lua:4: attempt to perform arithmetic on a string value [2]
+0630.111033.471 tid:4151421392 gp_lua_util.c.171,(E),error running function `action': /home/ap/aps/gump/script/base/action.lua:4: attempt to concatenate global '__VUID' (a nil value) [2]
+0630.111653.264 tid:4152199632 gp_redis_util.c.25,(E),connect redis unix:[/tmp/redis.sock] error [No such file or directory]
+
+0630.111653.264 tid:4152199632 gp_redis_util.c.131,(E),connect redis server [/tmp/redis.sock:0] failed
+0630.111653.264 tid:4152199632 gp_main.c.627,(E),run_mode [1], redis addr[/tmp/redis.sock:0], error[No such file or directory]
+0630.111835.340 tid:4151228880 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-111835]
+0630.111911.830 tid:4151228880 gp_main.c.40,(E),virtual user will stop....
+0630.111956.100 tid:4151405008 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-111956]
+0630.112032.708 tid:4151405008 gp_main.c.40,(E),virtual user will stop....
+0630.112033.117 tid:4151405008 gp_main.c.533,all virtual user are terminated!!0630.112604.618 tid:4151581136 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-112604]
+0630.112621.151 tid:4151581136 gp_main.c.40,(E),virtual user will stop....
+0630.112621.556 tid:4151581136 gp_main.c.533,all virtual user are terminated!!0630.112738.647 tid:4152162768 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-112738]
+0630.112758.447 tid:4152162768 gp_main.c.40,(E),virtual user will stop....
+0630.112758.852 tid:4152162768 gp_main.c.533,all virtual user are terminated!!0630.112851.137 tid:4151810512 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-112851]
+0630.112905.084 tid:4151810512 gp_main.c.40,(E),virtual user will stop....
+0630.112905.489 tid:4151810512 gp_main.c.533,all virtual user are terminated!!0630.112950.882 tid:4152191440 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-112950]
+0630.113026.384 tid:4152191440 gp_main.c.40,(E),virtual user will stop....
+0630.113026.788 tid:4152191440 gp_main.c.533,all virtual user are terminated!!0630.113649.419 tid:4151790032 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-113649]
+0630.113711.827 tid:4151790032 gp_main.c.40,(E),virtual user will stop....
+0630.113712.232 tid:4151790032 gp_main.c.533,all virtual user are terminated!!0630.113739.858 tid:4152101328 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-113739]
+0630.113807.483 tid:4152101328 gp_main.c.40,(E),virtual user will stop....
+0630.113807.894 tid:4152101328 gp_main.c.533,all virtual user are terminated!!0630.113837.176 tid:4151228880 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140630-113837]
+0630.114500.087 tid:4151228880 gp_main.c.533,all virtual user are terminated!!0713.103611.643 tid:4151237072 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.103611.699 tid:4151237072 gp_lua_util.c.181,(E),error running function `action': /home/ap/aps/gump/script/BEP4101/action.lua:2: corba_call_impl call error[连接服务器失败, retcode[2010008]:连接异常中止，可能是通讯失败或者通讯超时!] [2]
+0713.104551.355 tid:4151646672 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.104551.358 tid:4151646672 gp_lua_util.c.181,(E),error running function `action': /home/ap/aps/gump/script/BEP4101/action.lua:2: corba_call_impl call error[交易[4101]失败, retcode[2010008]:communication broken or timeout!
+] [2]
+0713.104700.320 tid:4151630288 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.104700.404 tid:4151630288 gp_lua_util.c.181,(E),error running function `action': /home/ap/aps/gump/script/BEP4101/action.lua:7: attempt to call field 'cb_call2' (a nil value) [2]
+0713.104737.810 tid:4151372240 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.104803.076 tid:4151900624 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.104842.129 tid:4152220112 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.105315.368 tid:4152007120 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.105410.488 tid:4152060368 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.105442.257 tid:4151765456 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.105649.494 tid:4151478736 gp_lua_util.c.199,(E),wrong result type [need int]
+0713.105711.560 tid:4151859664 gp_lua_util.c.199,(E),wrong result type [need int]
+0718.142110.116 tid:4151891648 gp_lua_util.c.181,(E),error running function `init': /home/ap/aps/gump/script/base2/init.lua:3: attempt to call global 'loadstarringlog' (a nil value) [2]
+0718.142214.710 tid:4151977664 gp_lua_util.c.181,(E),error running function `action': /home/ap/aps/gump/script/base2/action.lua:4: replaced str must be a str [2]
+0718.160306.980 tid:4152014528 gp_redis_util.c.25,(E),connect redis unix:[/tmp/redis.sock] error [No such file or directory]
+
+0718.160306.980 tid:4152014528 gp_redis_util.c.131,(E),connect redis server [/tmp/redis.sock:0] failed
+0718.160306.980 tid:4152014528 gp_main.c.627,(E),run_mode [1], redis addr[/tmp/redis.sock:0], error[No such file or directory]
+0718.160327.343 tid:4151420608 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-160327]
+0718.160929.364 tid:4151420608 gp_main.c.533,all virtual user are terminated!!0718.161052.830 tid:4151547584 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-161052]
+0718.161654.855 tid:4151547584 gp_main.c.533,all virtual user are terminated!!0718.162606.092 tid:4151502528 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-162606]
+0718.162606.759 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.759 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.824 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.824 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.828 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.828 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.834 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.834 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.856 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.856 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.861 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.861 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.881 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.881 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.898 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.898 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.903 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.903 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.908 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.908 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.909 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.909 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.911 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.911 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.914 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.914 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.914 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.914 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.916 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.916 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.918 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.918 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.921 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.921 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.921 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.921 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.924 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.924 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.930 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.930 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.931 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.931 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.937 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.937 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.940 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.940 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.946 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.946 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.947 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.947 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.948 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.948 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.951 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.951 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.953 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.953 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.959 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.959 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.963 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.963 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.965 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.965 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.965 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.965 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.966 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.966 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.968 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.968 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.970 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.970 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.970 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.970 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.970 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.970 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.977 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.977 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.978 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.979 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.982 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.982 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.983 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.983 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.987 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.987 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.990 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.990 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.992 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.992 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.994 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.994 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.997 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162606.997 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.000 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.000 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.002 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.002 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.004 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.004 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.014 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.015 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.015 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.016 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.017 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.017 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.018 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.018 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.018 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.019 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.023 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.023 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.023 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.023 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.024 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.024 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.026 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.026 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.029 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.029 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.030 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.030 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.031 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.031 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.033 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.033 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.034 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.034 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.036 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.036 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.042 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.042 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.043 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.043 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.045 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.045 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.046 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.046 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.055 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.055 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.055 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.055 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.058 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.058 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.060 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.060 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.061 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.061 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.061 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.061 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162606.973 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.062 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.067 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.067 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.067 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.067 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.069 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.069 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.074 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.074 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.076 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.077 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.078 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.078 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.078 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.079 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.079 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.079 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.083 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.083 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.084 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.084 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.090 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.090 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.092 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.092 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.094 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.095 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.095 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.095 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.096 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.096 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.097 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.098 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.099 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.099 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.100 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.100 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.101 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.102 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.103 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.103 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.106 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.106 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.109 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.109 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.109 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.109 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.113 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.113 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162607.114 tid:4151502528 gp_main.c.135,(E),luaL_load[/home/ap/aps/gump/script/base/init.lua] failed[6]
+0718.162607.114 tid:4151502528 gp_main.c.232,(E),gp_do_init error
+0718.162650.518 tid:4151502528 gp_main.c.40,(E),virtual user will stop....
+0718.162710.625 tid:4151502528 gp_main.c.533,all virtual user are terminated!!0718.162735.445 tid:4151625408 gp_loadcfg.c.93,(E),fopen [/home/ap/aps/gump/scenario/runner_base2] failed [No such file or directory]
+0718.162756.662 tid:4151994048 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-162756]
+0718.163358.701 tid:4151994048 gp_main.c.533,all virtual user are terminated!!0718.163626.349 tid:4151334592 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-163626]
+0718.164210.318 tid:4151334592 gp_main.c.40,(E),virtual user will stop....
+0718.164212.329 tid:4151334592 gp_main.c.533,all virtual user are terminated!!0718.164257.695 tid:4151281344 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-164257]
+0718.164440.318 tid:4151281344 gp_main.c.40,(E),virtual user will stop....
+0718.164444.337 tid:4151281344 gp_main.c.533,all virtual user are terminated!!0718.164453.519 tid:4151797440 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-164453]
+0718.165200.200 tid:4151797440 gp_main.c.40,(E),virtual user will stop....
+0718.165204.220 tid:4151797440 gp_main.c.533,all virtual user are terminated!!0718.165250.773 tid:4151629504 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-165250]
+0718.171354.832 tid:4151629504 gp_main.c.533,all virtual user are terminated!!0718.172453.900 tid:4151236288 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-172453]
+0718.173755.124 tid:4151236288 gp_main.c.40,(E),virtual user will stop....
+0718.173759.142 tid:4151236288 gp_main.c.533,all virtual user are terminated!!0718.173858.653 tid:4151973568 gp_redis_util.c.236,(D),r_cmd[HSET TM_SVR::GLOBAL_INFO STARTTIME 20140718-173858]
+0718.175525.733 tid:4151973568 gp_main.c.40,(E),virtual user will stop....
+0718.175529.779 tid:4151973568 gp_main.c.533,all virtual user are terminated!!

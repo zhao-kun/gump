@@ -1,0 +1,21 @@
+# $Id: Make.defines.in,v 1.2 2004/12/07 00:39:27 cvs Exp $
+# Use configure auto create Make.defines.
+
+CC=gcc
+CPP=gcc -E
+
+RANLIB=ranlib
+AR=ar
+LD=gcc
+
+CFLAGS=-g  -Wall -fPIC -D_REENTRANT
+CPPFLAGS=
+LDFLAGS=
+
+SHLIBLDOPT=-shared -fPIC
+SHLIBEXT=.so
+AROPT=-curv
+
+SYSLIBS=-lpthread -ldl -lcurses -lm -lc 
+
+CLEANFILES=core *.core core.* *.o *.ln

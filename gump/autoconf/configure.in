@@ -1,0 +1,137 @@
+# $Id: configure.in,v 1.3 2004/12/14 03:21:24 cvs Exp $
+# Process this file with autoconf to produce a configure script.
+
+AC_INIT(payrunner, 1.0, zhaokun@adtec.com.cn)
+AC_CONFIG_HEADER([config.h])
+AC_CANONICAL_SYSTEM
+
+
+# Checks for programs.
+
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_RANLIB
+AC_PROG_MAKE_SET
+
+# Checks for libraries.
+
+AC_CHECK_LIB(c, atexit)
+AC_CHECK_LIB(gen, basename)
+AC_CHECK_LIB(socket, socket)
+AC_CHECK_LIB(inet_addr, nsl)
+AC_CHECK_LIB(m, pow)
+AC_CHECK_LIB(curses, initscr)
+AC_CHECK_LIB(dl, dlerror)
+AC_CHECK_LIB(pthread, pthread_exit)
+
+
+# Checks for header files.
+
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+
+AC_CHECK_HEADERS(stdio.h unistd.h memory.h sys/time.h time.h math.h setjmp.h ctype.h aio.h assert.h libgen.h signal.h wchar.h complex.h nl_types.h termios.h sys/stat.h syslog.h fcntl.h ndbm.h dlfcn.h grp.h netdb.h pwd.h utmpx.h errno.h stropts.h fenv.h fmtmsg.h fnmatch.h sys/statvfs.h sys/timeb.h sys/ipc.h ftw.h sys/resource.h glob.h search.h iconv.h wctype.h locale.h sys/mman.h mqueue.h sys/msg.h langinfo.h poll.h spawn.h sched.h trace.h pthread.h sys/uio.h regex.h semaphore.h sys/sem.h sys/shm.h monetarr.h ulimit.h limits.h sys/utsname.h stdarg.h stddef.h wordexp.h utime.h sys/times.h sys/socket.h netinet/in.h arpa/inet.h sys/ioctl.h dirent.h poll.h)
+
+AC_HEADER_TIME
+
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+AC_C_CONST
+
+#AC_DECL_ARG_MAX
+#AC_DECL_NAME_MAX
+#AC_DECL_PATH_MAX
+
+AC_CHECK_TYPE(in_port_t, unsigned short)
+
+AC_CHECK_FUNC(max, AC_DEFINE(HAVE_FUNC_MAX))
+AC_CHECK_FUNC(min, AC_DEFINE(HAVE_FUNC_MIN))
+
+AC_FUNC_SELECT_ARGTYPES
+AC_DEFINE_UNQUOTED( SELECT_ARG1, $1 )
+AC_DEFINE_UNQUOTED( SELECT_ARG234, $2 )
+AC_DEFINE_UNQUOTED( SELECT_ARG5, $3 )
+
+dnl AC_DEFINE_UNQUOTED( SELECT_ARG1, $ac_cv_func_select_arg1 )
+dnl AC_DEFINE_UNQUOTED( SELECT_ARG234, $func_select_arg234 )
+dnl AC_DEFINE_UNQUOTED( SELECT_ARG5, $func_select_arg5 )
+
+# Checks for library functions.
+
+
+dnl
+dnl If the compiler is gcc, enable all warnings and disable all optimization.
+dnl
+if test "${CC}" = gcc; then
+	CFLAGS=`echo "$CFLAGS -Wall" | sed -e 's/-O.//g'`
+fi
+
+dnl
+dnl Some system-specific stuff ...
+dnl
+case "$host_os" in
+*aix*)  if test "${CC}" = gcc; then
+		SHLIBLDOPT="-G"
+	else
+		CFLAGS="$CFLAGS -qlanglvl=ansi -qalign=natural -DAIXUSE -D_ALL_SOURCE -D_REENTRANT"
+		SHLIBLDOPT="-G -brtl -berok -bnoentry"
+	fi
+	LD=$CC
+	SHLIBEXT=".so"
+	;;
+*hpux*)
+	CFLAGS="$CFLAGS -Ae +z -D_REENTRANT" 
+	LD=ld
+	SHLIBLDOPT="-b"
+	SHLIBEXT=".sl"
+	;;
+*osf*)
+	CFLAGS="$CFLAGS -D_SOCKADDR_LEN"
+	;;
+*solaris*)
+	LD=${CC}
+	SHLIBDOPT="-G"
+	SHLIBEXT=".so"
+	if test "${CC}" = gcc; then
+		CFLAGS="$CFLAGS -D__EXTENSIONS__"
+	else
+		CFLAGS="$CFLAGS -D__STDC__"
+	fi
+	;;
+*linux*)
+	LD=${CC}
+	CFLAGS="$CFLAGS -fPIC -D_REENTRANT"
+	SHLIBLDOPT="-shared -fPIC"
+	SHLIBEXT=".so"
+	;;
+*sco*)
+	CFLAGS="$CFLAGS -w3 -belf -DSCO5" 
+	LD=${CC}
+	SHLIBLDOPT="-G -KPIC"
+	SHLIBEXT=".so"
+	;;
+*)
+	LD=${CC}
+	SHLIBLDOPT="-G -KPIC"
+	SHLIBEXT=".so"
+	;;
+esac
+
+AC_SUBST(LD)
+AC_SUBST(SHLIBLDOPT)
+AC_SUBST(SHLIBEXT)
+
+
+AC_OUTPUT(Make.defines)
+
+
+mkdir $host > /dev/null 2>&1
+if test -d "$host" ; then
+   cp config.h Make.defines $host
+   mv config.status config.log $host
+   echo "saving copies in $host/"
+fi
+
+cp Make.defines $RUNNERDIR/etc
+cp config.h $RUNNERDIR/include
